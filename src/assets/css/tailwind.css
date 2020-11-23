@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body,
+  html {
+    @apply h-full font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  nav {
+    font-family: "Cabin Sketch", cursive;
+  }
+
+  a {
+    @apply font-bold text-blue underline;
+
+    &:hover {
+      @apply no-underline;
+    }
+  }
+}
