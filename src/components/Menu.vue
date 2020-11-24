@@ -8,7 +8,7 @@
         v-for="(route, index) in routesList"
         ><Icon
           :name="route.meta.icon"
-          class="text-blue group-hover:text-yellow mb-4 w-16 h-16"
+          class="text-blue-dark group-hover:text-yellow mb-4 w-16 h-16"
         />
         {{ route.name }}
       </router-link>
