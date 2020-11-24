@@ -1,36 +1,37 @@
 <template>
-  <footer class="w-full text-center border-t-2 mt-12 pt-12">
-    <div class="flex justify-between items-center w-full">
-      <div class="text-center transform -rotate-3">
-        <p class="font-custom text-2xl">
+  <footer class="w-full border-t-2 mt-12 pt-12">
+    <div class="flex flex-wrap justify-between items-center w-full">
+      <div class="w-1/4 text-center transform -rotate-3">
+        <p class="font-custom text-3xl">
           Retrouvez moi sur <br />
           Facebook & Instagram !
         </p>
-        <SocialBox class="mt-4" :socials="infos.contact.socials" />
+        <SocialBox :socials="infos.contact.socials" />
       </div>
-      <div class="text-center">
+      <div class="w-1/2 text-center">
         <p>
-          Contactez-moi par mail
+          Contactez-moi par mail via
           <a :href="emailAddresLink">{{ infos.contact.email }}</a> <br />ou par
           téléphone au <a :href="phoneNumberLink">{{ infos.contact.phone }}</a>
         </p>
         <p>
           Atelier à Neudorf (Strasbourg)
-          <span class="font-medium">uniquement sur rendez-vous.</span>
+          <span class="font-bold">uniquement sur rendez-vous.</span>
         </p>
       </div>
-      <div class="text-center transform rotate-12">
-        <p class="font-custom text-2xl">Elsässischi quàlität !</p>
+      <div class="w-1/4 text-center transform rotate-6">
+        <p class="font-custom text-3xl">
+          Elsässischi quàlität !
+        </p>
         <Icon name="alsace" class="text-red-600 h-16 w-16 inline-block" />
       </div>
     </div>
-    <p class="text-sm mb-0">{{ year }} &copy; {{ infos.site.url }}</p>
-    <p class="text-sm mb-0">
-      Site réalisé par
+    <p class="text-xs mb-0 mt-6 text-center">
+      {{ year }} &copy; {{ infos.site.url }} - Site réalisé par
       <a
         :href="infos.site.dev.url"
-        class="text-black font-medium"
         target="_blank"
+        class="text-black font-normal"
         >{{ infos.site.dev.name }}</a
       >
     </p>
