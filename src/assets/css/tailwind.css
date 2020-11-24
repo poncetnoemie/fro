@@ -11,7 +11,8 @@
   h1,
   h2,
   h3,
-  nav {
+  nav,
+  .font-custom {
     font-family: "Cabin Sketch", cursive;
   }
 
@@ -21,5 +22,25 @@
     &:hover {
       @apply no-underline;
     }
+  }
+
+  p,
+  li {
+    @apply mb-4;
+  }
+}
+
+@layer utilities {
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: all 0.3s ease;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  [v-cloak] {
+    opacity: 0;
   }
 }
