@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid gap-10 place-items-center p-12 lg:px-20 max-w-6xl m-auto w-full leading-relaxed"
+    class="grid gap-10 place-items-center p-12 lg:px-20 m-auto w-full leading-relaxed"
     id="app"
   >
     <router-link :to="$route.name === 'Coussins' ? '/coussins' : '/'">
@@ -27,7 +27,7 @@
       </transition-group>
     </router-link>
     <Menu />
-    <main class="w-full">
+    <main class="w-full max-w-5xl">
       <router-view />
     </main>
     <Footer />
