@@ -1,9 +1,26 @@
 {
     "contact": {
         "email": "maryabitbol@gmail.com",
-        "phone": "06 81 50 36 20"
+        "phone": "06 81 50 36 20",
+        "socials": [
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/mariefroehlicher/"},
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/gotfertomi/"
+            }
+        ]
     },
     "site": {
-        "url": "mariefroehlicher.com"
+        "description": "Marie Froehlicher restaure vos chaises, fauteuils et canapés en tapisserie traditionnelle, sur Strasbourg.",
+        "name": "Marie Froehlicher",
+        "name_gotfertomi": "Marie Froehlicher",
+        "tagline": "Tapissière et restauratrice d'ameublement en siège",
+        "url": "mariefroehlicher.com",
+        "dev": {
+            "name": "Noémie Poncet",
+            "url": "http://noemieponcet.com"
+        }
     }
 }

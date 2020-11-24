@@ -1,22 +1,21 @@
 <template>
-  <div class="grid gap-4">
-    <h1 class="font-bold text-4xl lg:text-6xl">
-      Vue.js + tailwindcss template
-    </h1>
-    <p>
-      Diplomée de la faculté d'Arts-Plastiques de Strasbourg, Marie FROEHLICHER
-      a crée après 8 années de formation en tapisserie traditionnelle sa propre
-      entreprise de tapisserie d'ameublement en siège et redonne vie à vos
-      chaises, fauteuils et canapés en changeant la garniture et la tapisserie
-      sur toutes pièces à l'identique ou selon votre idée.
-    </p>
-    <p>
-      Contactez-moi par mail
-      <a :href="emailAddresLink">{{ infos.contact.email }}</a> ou par téléphone
-      au <a :href="phoneNumberLink">{{ infos.contact.phone }}</a
-      >.
-    </p>
-    <p>Atelier à Neudorf (Strasbourg) uniquement sur rendez-vous.</p>
+  <div class="grid gap-10">
+    <img
+      src="@/assets/images/presentation.jpg"
+      :alt="infos.site.name"
+      class="w-full"
+    />
+    <div>
+      <h1 class="font-bold text-4xl">Présentation</h1>
+      <p class="text-justify">
+        Diplomée de la faculté d'Arts Plastiques de Strasbourg, Marie
+        FROEHLICHER a crée après 8 années de formation en tapisserie
+        traditionnelle sa propre entreprise de tapisserie d'ameublement en siège
+        et redonne vie à vos chaises, fauteuils et canapés en changeant la
+        garniture et la tapisserie sur toutes pièces à l'identique ou selon
+        votre idée.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -24,18 +23,10 @@
 import infos from "@/data/infos.json";
 
 export default {
-  computed: {
-    emailAddresLink() {
-      return "mailto:" + infos.contact.email;
-    },
-    phoneNumberLink() {
-      return "tel:" + infos.contact.phone.replace(/ /g, "");
-    },
-  },
   data() {
     return {
-      infos: infos,
+      infos: infos
     };
-  },
+  }
 };
 </script>
