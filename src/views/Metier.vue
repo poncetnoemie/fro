@@ -2,7 +2,7 @@
   <div class="grid md:grid-cols-3 gap-10">
     <div class="md:col-span-2">
       <h1 class="font-bold text-4xl">Métier</h1>
-      <p class="text-2xl italic leading-normal">
+      <p class="text-xl font-medium italic leading-normal">
         Le tapissier garnisseur est l'artisan qui met en place la tapisserie
         d'ameublement, réalise des garnitures et des couvertures de sièges ou
         tout autre meuble recouvert de tissu ou de cuir.
@@ -28,29 +28,29 @@
     </div>
     <img
       src="@/assets/images/metier-01.jpg"
-      class="md:col-span-1 transform -rotate-3 w-full mt-12"
+      class="md:col-span-1 md:transform md:-rotate-3 w-full my-5"
       alt=""
     />
     <div
-      class="md:col-span-1 relative pr-12 flex flex-col items-center justify-between"
+      class="md:col-span-1 relative md:pr-12 flex flex-col items-center justify-between"
     >
       <img
         src="@/assets/images/metier-03.jpg"
         alt=""
-        class="relative transform -rotate-3 z-20 shadow-lg"
+        class="relative transform md:-rotate-3 md:z-20 md:shadow-lg"
       />
       <img
         src="@/assets/images/metier-02.jpg"
         alt=""
-        class="relative transform rotate-12 z-0 -mt-12 max-w-48 self-end"
+        class="relative w-full md:transform md:rotate-12 md:z-0 mt-12 md:-mt-12 md:max-w-48 md:self-end"
       />
     </div>
     <div class="md:col-span-2">
-      <p class="text-2xl italic leading-normal">
+      <p class="text-xl font-medium italic leading-normal">
         La tapisserie d'ameublement regroupe les techniques et le savoir-faire
         du métier de tapissier garnisseur. Parmi d'autres tâches, la tapisserie
-        d'ameublement consiste en la réfection de sièges, dont voici les étapes
-        :
+        d'ameublement consiste en la réfection de sièges dont voici les
+        différentes étapes :
       </p>
       <ul class="list-inside list-disc">
         <li>
