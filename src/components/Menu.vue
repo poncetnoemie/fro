@@ -1,6 +1,9 @@
 <template>
   <div class="w-full max-w-4xl">
-    <nav class="w-full items-center justify-between hidden md:flex">
+    <nav
+      class="w-full items-center justify-between hidden md:flex"
+      @click="scrollToTop()"
+    >
       <router-link
         class="text-black hover:text-black text-xl flex flex-col items-center justify-center group w-32 h-32"
         :key="index"
@@ -60,6 +63,9 @@ export default {
     };
   },
   methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
     toggleMenu() {
       if (this.showMenu === true) {
         this.showMenu = false;
