@@ -30,6 +30,7 @@
     "postcss": "^8.1.9",
     "prettier": "^1.19.1",
     "sitemap-webpack-plugin": "^0.9.0",
+    "vue-fixed-header": "^3.2.15",
     "vue-template-compiler": "^2.6.11"
   }
 }

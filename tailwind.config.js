@@ -28,6 +28,9 @@ module.exports = {
           "25": "rgba(255,255,255,.25)"
         }
       },
+      margin: {
+        "screen-10": "10vw"
+      },
       maxWidth: theme => ({
         ...theme("spacing")
       }),

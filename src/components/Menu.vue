@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:max-w-4xl">
+  <div class="w-full max-w-4xl">
     <nav class="w-full items-center justify-between hidden md:flex">
       <router-link
         class="text-black hover:text-black text-xl flex flex-col items-center justify-center group w-32 h-32"
@@ -11,11 +11,11 @@
           :name="route.meta.icon"
           class="text-blue-dark group-hover:text-yellow mb-4 w-16 h-16 transition-colors duration-200"
         />
-        {{ route.name }}
+        <span>{{ route.name }}</span>
       </router-link>
     </nav>
     <button
-      class="fixed top-0 left-0 font-custom hover:bg-yellow rounded-sm py-2 px-8 block md:hidden z-50 focus:outline-none"
+      class="fixed top-0 left-0 font-custom hover:bg-yellow rounded-sm py-2 px-8 block md:hidden z-50 focus:outline-none w-full"
       :class="showMenu ? 'bg-white' : 'bg-blue'"
       @click="toggleMenu()"
     >

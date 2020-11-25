@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     :viewBox="icon.viewbox"
-    class="fill-current"
+    class="icon fill-current"
     v-html="icon.path"
   ></svg>
 </template>
