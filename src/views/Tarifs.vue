@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="grid md:grid-cols-2 gap-10">
-      <div class="col-span-2 md:pr-12 md:mb-6">
+      <div class="md:col-span-2 md:pr-12 md:mb-6">
         <h1 class="font-bold text-4xl">Tarifs</h1>
         <p>
           Cette grille horaire est donnée à titre indicatif, un devis ferme et
@@ -13,7 +13,7 @@
         </p>
       </div>
       <div
-        class="col-span-1 flex flex-col md:flex-row md:items-center"
+        class="md:col-span-1 flex flex-col md:flex-row md:items-center"
         v-for="(price, index) in prices"
         :key="'price-' + index"
       >
