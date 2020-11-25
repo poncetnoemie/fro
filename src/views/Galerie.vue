@@ -9,7 +9,7 @@
       v-for="(item, index) in getGallery('new')"
     >
       <img
-        :src="getImageSrc(item.name + '.jpg')"
+        :src="getImageSrc('gallery/thumbs/' + item.name + '.jpg')"
         :alt="'Fauteuils - ' + (index + 1)"
         class="w-full shadow-lg md:hover:shadow-xl duration-200 transform md:hover:-translate-y-2 md:cursor-pointer"
         @click.prevent="
@@ -29,7 +29,7 @@
       v-for="(item, index) in getGallery('old')"
     >
       <img
-        :src="getImageSrc(item.name + '.jpg')"
+        :src="getImageSrc('gallery/thumbs/' + item.name + '.jpg')"
         :alt="'Fauteuils - ' + (index + 1)"
         class="w-full shadow-lg md:hover:shadow-xl duration-200 transform md:hover:-translate-y-1 md:cursor-pointer"
         @click.prevent="
@@ -63,7 +63,7 @@
             <transition name="fade" mode="out-in">
               <div class="w-full h-screen-80 absolute top-0 left-0">
                 <img
-                  :src="getImageSrc(image.name + '.jpg')"
+                  :src="getImageSrc('gallery/' + image.name + '.jpg')"
                   v-show="image.name === gallery.imageActive.name"
                   class="w-full max-w-screen h-auto m-auto"
                 />

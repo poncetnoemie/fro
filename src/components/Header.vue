@@ -71,7 +71,7 @@ export default {
     @apply w-full;
   }
   .vue-fixed-header--isFixed {
-    @apply fixed left-0 top-0 px-12 shadow z-50;
+    @apply fixed left-0 top-0 px-12 shadow z-20;
   }
   .vue-fixed-header--isFixed > .relative {
     @apply flex-row items-center;
