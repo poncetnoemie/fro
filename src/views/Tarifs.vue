@@ -136,7 +136,6 @@ export default {
   components: { Icon },
   data() {
     return {
-      title: "Tarifs",
       prices: prices
     };
   }

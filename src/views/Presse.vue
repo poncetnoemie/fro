@@ -18,32 +18,12 @@
 </template>
 
 <script>
+import articles from "@/data/articles.json";
+
 export default {
   data() {
     return {
-      articles: [
-        {
-          alt: "Olca",
-          name: "olca",
-          url: "https://www.olcalsace.org/fr/actualite/marie-froehlicher-dit-ja"
-        },
-        {
-          alt: "Christophe de Barry",
-          name: "christophe-de-barry",
-          url: "https://www.christophdebarry.fr/marie-une-brin-de-folie/"
-        },
-        {
-          alt: "Gnooss by La Maison de Caroline",
-          name: "gnooss",
-          url:
-            "https://www.facebook.com/632935486786418/posts/3251130448300229/"
-        },
-        {
-          alt: "Foire européenne de Strasbourg",
-          name: "foire-europeene-de-strasbourg",
-          url: "https://www.facebook.com/foireurop/posts/10159149967213949/"
-        }
-      ]
+      articles: articles
     };
   }
 };

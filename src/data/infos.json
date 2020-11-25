@@ -14,13 +14,13 @@
     },
     "site": {
         "description": "Marie Froehlicher restaure vos chaises, fauteuils et canapés en tapisserie traditionnelle, sur Strasbourg.",
-        "name": "Marie Froehlicher",
-        "name_gotfertomi": "Marie Froehlicher",
-        "tagline": "Tapissière et restauratrice d'ameublement en siège",
-        "url": "mariefroehlicher.com",
         "dev": {
             "name": "Noémie Poncet",
             "url": "http://noemieponcet.com"
-        }
+        },
+        "name": "Marie Froehlicher",
+        "name_gotfertomi": "Gotfertomi par Marie Froehlicher",
+        "title": "Marie Froehlicher - Tapissière et restauratrice d'ameublement en siège",
+        "url": "mariefroehlicher.com"
     }
 }
