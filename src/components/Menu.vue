@@ -2,13 +2,14 @@
   <div class="w-full md:max-w-4xl">
     <nav class="w-full items-center justify-between hidden md:flex">
       <router-link
-        class="no-underline text-black text-xl flex flex-col items-center justify-center group w-32 h-32"
+        class="text-black hover:text-black text-xl flex flex-col items-center justify-center group w-32 h-32"
         :key="index"
+        tag="a"
         :to="route.path"
         v-for="(route, index) in routesList"
         ><Icon
           :name="route.meta.icon"
-          class="text-blue-dark group-hover:text-yellow mb-4 w-16 h-16"
+          class="text-blue-dark group-hover:text-yellow mb-4 w-16 h-16 transition-colors duration-200"
         />
         {{ route.name }}
       </router-link>
