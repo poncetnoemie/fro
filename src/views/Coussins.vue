@@ -1,6 +1,13 @@
 <template>
   <div class="grid md:grid-cols-3 gap-10">
     <!-- CLASSIC -->
+    <div class="md:col-span-2">
+      <img
+        :src="require('@/assets/images/coussins-gotfertomi-start.jpg')"
+        alt="Coussins Gotfertomi®"
+        class="w-full"
+      />
+    </div>
     <div class="md:col-span-1">
       <h1 class="font-bold text-4xl">Coussins</h1>
       <p>
@@ -23,13 +30,6 @@
         Kelsch fabriqué en Alsace...
       </p>
     </div>
-    <div class="md:col-span-2">
-      <img
-        :src="require('@/assets/images/coussins-gotfertomi-start.jpg')"
-        alt="Coussins Gotfertomi®"
-        class="w-full"
-      />
-    </div>
     <div
       class="md:col-span-1"
       :key="'classic-' + index"
@@ -44,10 +44,9 @@
       />
     </div>
     <!-- OTHERS -->
-
     <div class="md:col-span-3">
-      <h2 class="font-bold text-4xl text-center">
-        Des coussins... mais pas que !
+      <h2 class="font-bold text-4xl text-center my-12">
+        Des coussins, oui... mais pas que !
       </h2>
     </div>
     <div class="md:col-span-3 text-center">
@@ -70,6 +69,11 @@
       </div>
     </div>
     <!-- COFFEE -->
+    <div class="md:col-span-3">
+      <h2 class="font-bold text-4xl text-center my-12">
+        Egalement disponibles
+      </h2>
+    </div>
     <div class="md:col-span-1">
       <h2 class="font-bold text-2xl mb-4">
         Sacs de grains de café
@@ -77,7 +81,7 @@
       </h2>
       <p>
         Formats de 37/37cm à 55/55cm. <br />Tarifs et commande par
-        <a :href="emailAddresLink">message</a>.
+        <a :href="emailAddresLink">mail</a>.
       </p>
     </div>
     <div
@@ -104,7 +108,9 @@ import infos from "@/data/infos.json";
 export default {
   computed: {
     emailAddresLink() {
-      return "mailto:" + infos.contact.email;
+      return (
+        "mailto:" + infos.contact.email + "?subject=A propos de Gotfertomi®"
+      );
     }
   },
   data() {

@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       colors: {
         black: {
-          default: "#111111"
+          default: "#111111",
+          "75": "rgba(0,0,0,.75)",
+          "50": "rgba(0,0,0,.50)",
+          "25": "rgba(0,0,0,.25)"
         },
         blue: {
           dark: "#81c5b9",
@@ -18,7 +21,11 @@ module.exports = {
           default: "#e7c836"
         },
         white: {
-          default: "#fefefe"
+          default: "#fefefe",
+          "90": "rgba(255,255,255,.90)",
+          "75": "rgba(255,255,255,.75)",
+          "50": "rgba(255,255,255,.50)",
+          "25": "rgba(255,255,255,.25)"
         }
       },
       maxWidth: theme => ({

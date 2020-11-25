@@ -22,5 +22,124 @@
             "name": "Noémie Poncet",
             "url": "http://noemieponcet.com"
         }
-    }
+    },
+    "tarifs": [
+        {
+            "name": "anglais",
+            "details": ["Garnissage à neuf recouvrage compris : 26h","Dégarnissage : 3h","Recouvrage uniquement : 10h","Volant (supplément) : 3h"],
+            "title": "Fauteuil anglais"
+        },
+        {
+            "name": "assise",
+            "details": [
+                "Dossier + siège garni : 13.5h",
+                "Dégarnissage : 2h",
+                "Recouvrage uniquement : 4h"
+            ],
+            "title": "Chaise avec siège et dossier garni"
+        },
+        {
+            "name": "bergere",
+            "details": [
+                "Garnissage à neuf recouvrage compris : 33h",
+                "Dégarnissage : 6h",
+                "Recouvrage uniquement : 17h"
+            ],
+            "title": "Fauteuil Bergère"
+        },
+        {
+            "name": "bergere_oreilles",
+            "details": [
+                "Garnissage à neuf recouvrage compris : 40h",
+                "Dégarnissage : 6h",
+                "Recouvrage uniquement : 20h"
+            ],
+            "title": "Fauteuil Bergère avec coussin à oreilles"
+        },
+        {
+            "name": "cabriolet",
+            "details": [
+                "Façon recouvrage compris : 16h",
+                "Dégarnissage : 3h",
+                "Recouvrage uniquement clouté : 6h",
+                "Recouvrage uniquement galonné : 5.5h"
+            ],
+            "title": "Cabriolet"
+        },
+        {
+            "name": "cabriolet",
+            "details": [
+                "Façon recouvrage compris : 22.5h",
+                "Dégarnissage : 3h",
+                "Recouvrage uniquement clouté : 11h",
+                "Recouvrage uniquement galonné : 10h"
+            ],
+            "title": "Cabriolet à cuvette"
+        },
+        {
+            "name": "crapaud",
+            "details": [
+                "Garnissage à neuf recouvrage compris : 26h",
+                "Dégarnissage : 3h",
+                "Recouvrage uniquement : 10h"
+            ],
+            "title": "Fauteuil Crapaud"
+        },
+        {
+            "name": "empire",
+            "details": [
+                "Garnissage couverture compris : 17h",
+                "Dégarnissage : 2h",
+                "Recouvrage uniquement : 6h"
+            ],
+            "title": "Fauteuil Empire"
+        },
+        {
+            "name": "galette",
+            "details": [
+                "Siège à neuf : 7h",
+                "Dégarnissage : 1h",
+                "Recouvrage uniquement : 1.5h"
+            ],
+            "title": "Chaise sans dossier"
+        },
+        {
+            "name": "louisXIII",
+            "details": [
+                "Façon recouvrage compris : 16h",
+                "Dégarnissage : 2h",
+                "Recouvrage uniquement : 7h"
+            ],
+            "title": "Fauteuil LOUIS XIII"
+        },
+        {
+            "name": "louisXV",
+            "details": [
+                "Siège et dossier garni : 28h",
+                "Dégarnissage : 3.5h",
+                "Recouvrage uniquement : 12h"
+            ],
+            "title": "Fauteuil LOUIS XV 2 places"
+        },
+        {
+            "name": "louisXVI",
+            "details": [
+                "Façon recouvrage compris : 16.5h",
+                "Dégarnissage : 3h",
+                "Recouvrage uniquement clouté : 6.5h",
+                "Recouvrage uniquement galonné : 5.5h"
+            ],
+            "title": "Fauteuil LOUIS XVI"
+        },
+        {
+            "name": "voltaire",
+            "details": [
+                "Façon recouvrage compris : 17h",
+                "Dégarnissage : 3h",
+                "Recouvrage uniquement clouté : 6.5h",
+                "Recouvrage uniquement galonné : 5.5h"
+            ],
+            "title": "Voltaire"
+        }
+    ]
 }

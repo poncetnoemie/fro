@@ -17,10 +17,10 @@
   }
 
   a {
-    @apply font-bold text-blue-dark underline;
+    @apply font-bold text-blue-dark;
 
     &:hover {
-      @apply no-underline;
+      @apply text-yellow;
     }
   }
 

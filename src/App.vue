@@ -1,9 +1,14 @@
 <template>
   <div
     class="grid gap-10 place-items-center p-12 lg:px-20 m-auto w-full leading-relaxed"
+    :class="{ 'fixed overflow-hidden': bodyScroll === false }"
     id="app"
   >
-    <router-link :to="$route.name === 'Coussins' ? '/coussins' : '/'">
+    <router-link
+      tag="div"
+      :class="{ 'z-50': bodyScroll === false }"
+      :to="$route.name === 'Coussins' ? '/coussins' : '/'"
+    >
       <transition-group
         class="relative h-64 w-64"
         mode="out-in"
@@ -26,7 +31,7 @@
         />
       </transition-group>
     </router-link>
-    <Menu />
+    <Menu @body-scroll="bodyScroll = $event" />
     <main class="w-full max-w-5xl">
       <router-view />
     </main>
@@ -43,6 +48,7 @@ export default {
   components: { Footer, Menu },
   data() {
     return {
+      bodyScroll: true,
       infos: infos
     };
   }

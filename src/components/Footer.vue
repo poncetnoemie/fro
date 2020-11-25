@@ -1,25 +1,26 @@
 <template>
-  <footer class="w-full border-t-2 mt-12 pt-12">
+  <footer class="w-full border-t-2 mt-6 pt-16">
     <div class="flex flex-wrap justify-between items-center w-full">
-      <div class="w-1/4 text-center transform -rotate-3">
+      <div class="w-full md:w-1/4 text-center md:transform md:-rotate-3">
         <p class="font-custom text-3xl">
           Retrouvez moi sur <br />
           Facebook & Instagram !
         </p>
         <SocialBox :socials="infos.contact.socials" />
       </div>
-      <div class="w-1/2 text-center">
+      <div class="w-full my-16 md:my-0 md:w-1/2 text-center">
         <p>
           Contactez-moi par mail via
           <a :href="emailAddresLink">{{ infos.contact.email }}</a> <br />ou par
-          téléphone au <a :href="phoneNumberLink">{{ infos.contact.phone }}</a>
+          téléphone au <a :href="phoneNumberLink">{{ infos.contact.phone }}</a
+          >.
         </p>
-        <p>
+        <p class="mb-0">
           Atelier à Neudorf (Strasbourg)
           <span class="font-bold">uniquement sur rendez-vous.</span>
         </p>
       </div>
-      <div class="w-1/4 text-center transform rotate-6">
+      <div class="w-full md:w-1/4 text-center md:transform md:rotate-6">
         <p class="font-custom text-3xl">
           Elsässischi quàlität !
         </p>
@@ -47,7 +48,11 @@ export default {
   components: { Icon, SocialBox },
   computed: {
     emailAddresLink() {
-      return "mailto:" + infos.contact.email;
+      return (
+        "mailto:" +
+        infos.contact.email +
+        "?subject=Contact mariefroehlicher.com"
+      );
     },
     phoneNumberLink() {
       return "tel:" + infos.contact.phone.replace(/ /g, "");
