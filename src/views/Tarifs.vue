@@ -14,16 +14,16 @@
       </div>
       <div
         class="col-span-1 flex flex-col md:flex-row md:items-center"
-        v-for="(tarif, index) in tarifs"
-        :key="'tarif-' + index"
+        v-for="(price, index) in prices"
+        :key="'price-' + index"
       >
-        <Icon :name="tarif.name" class="w-24 mb-6 md:mb-0 text-blue" />
+        <Icon :name="price.name" class="w-24 mb-6 md:mb-0 text-blue" />
         <div class="md:ml-10">
-          <h2 class="text-2xl">{{ tarif.title }}</h2>
+          <h2 class="text-2xl">{{ price.title }}</h2>
           <ul class="list-inside">
             <li
               class="mb-1 last:mb-0"
-              v-for="(detail, index) in tarif.details"
+              v-for="(detail, index) in price.details"
               :key="index"
             >
               {{ detail }}
@@ -129,14 +129,15 @@
 </template>
 
 <script>
-import infos from "@/data/infos.json";
+import prices from "@/data/prices.json";
 import Icon from "@/components/Icon.vue";
 
 export default {
   components: { Icon },
   data() {
     return {
-      tarifs: infos.tarifs
+      title: "Tarifs",
+      prices: prices
     };
   }
 };
