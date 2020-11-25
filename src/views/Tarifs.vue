@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="grid md:grid-cols-2 gap-10">
-      <div class="col-span-1 md:pr-12">
+      <div class="col-span-2 md:pr-12 md:mb-6">
         <h1 class="font-bold text-4xl">Tarifs</h1>
         <p>
           Cette grille horaire est donnée à titre indicatif, un devis ferme et

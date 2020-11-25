@@ -6,7 +6,7 @@
       class="w-full"
     />
     <div>
-      <h1 class="font-bold text-4xl">Présentation</h1>
+      <h1 class="font-bold text-4xl sr-only">Présentation</h1>
       <p class="text-justify">
         Diplomée de la faculté d'Arts Plastiques de Strasbourg, Marie
         FROEHLICHER a crée après 8 années de formation en tapisserie

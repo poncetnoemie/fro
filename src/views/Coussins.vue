@@ -1,13 +1,6 @@
 <template>
   <div class="grid md:grid-cols-3 gap-10">
     <!-- CLASSIC -->
-    <div class="md:col-span-2">
-      <img
-        :src="require('@/assets/images/coussins-gotfertomi-start.jpg')"
-        alt="Coussins Gotfertomi®"
-        class="w-full"
-      />
-    </div>
     <div class="md:col-span-1">
       <h1 class="font-bold text-4xl">Coussins</h1>
       <p>
@@ -29,6 +22,13 @@
         Intérieurs en ouate, divers tissus utilisés : coton, velours, véritable
         Kelsch fabriqué en Alsace...
       </p>
+    </div>
+    <div class="md:col-span-2">
+      <img
+        :src="require('@/assets/images/coussins-gotfertomi-start.jpg')"
+        alt="Coussins Gotfertomi®"
+        class="w-full"
+      />
     </div>
     <div
       class="md:col-span-1"
