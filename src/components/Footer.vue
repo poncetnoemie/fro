@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full border-t-2 mt-6 pt-16">
+  <footer class="w-full md:mt-6 pt-16">
     <div class="flex flex-wrap justify-between items-center w-full">
       <div class="w-full md:w-1/4 text-center md:transform md:-rotate-3">
         <p class="font-custom text-3xl">
