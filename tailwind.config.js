@@ -29,7 +29,8 @@ module.exports = {
         }
       },
       margin: {
-        "screen-10": "10vw"
+        "screen-10": "10vw",
+        "h-header": "360px"
       },
       maxWidth: theme => ({
         ...theme("spacing")

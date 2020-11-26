@@ -41,30 +41,37 @@
       <h2 class="font-custom text-2xl mt-4 text-center">{{ item.title }}</h2>
     </div>
     <Modal
-      class="hidden md:block"
       :title="gallery.imageActive.title"
       type="gallery"
-      v-if="view.showModal"
+      v-if="gallery.imageActive"
+      v-show="view.showModal"
       @close="hideModal()"
     >
-      <div class="w-full h-screen relative" @click.self="hideModal()">
+      <div class="w-full py-12 md:h-screen relative" @click.self="hideModal()">
         <button
-          class="slidenav left-0 font-custom hidden md:block"
+          class="slidenav md:fixed left-0 font-custom"
           @click.prevent="prevImage()"
           :disabled="gallery.imageActiveIndex - 1 < 0"
         >
           Précédent
         </button>
-        <div class="max-w-5xl m-auto relative">
+        <div class="max-w-5xl h-full m-auto relative">
           <div
             v-for="(image, index) in getGallery(gallery.imageActive.gallery)"
             :key="index"
           >
-            <transition name="fade" mode="out-in">
-              <div class="w-full h-screen-80 absolute top-0 left-0">
+            <transition
+              name="fade"
+              mode="out-in"
+              tag="div"
+              class="w-full h-full"
+            >
+              <div
+                class="w-full h-full flex items-center my-12 md:absolute md:top-0 md:left-0"
+              >
                 <img
                   :src="getImageSrc('gallery/' + image.name + '.jpg')"
-                  v-show="image.name === gallery.imageActive.name"
+                  v-if="image.name === gallery.imageActive.name"
                   class="w-full max-w-screen h-auto m-auto"
                 />
               </div>
@@ -72,7 +79,7 @@
           </div>
         </div>
         <button
-          class="slidenav right-0 font-custom hidden md:block"
+          class="slidenav md:fixed right-0 font-custom"
           @click.prevent="nextImage()"
           :disabled="
             gallery.imageActiveIndex + 1 ===
@@ -89,6 +96,12 @@
 <script>
 import Modal from "@/components/Modal.vue";
 import images from "@/data/images.json";
+
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks
+} from "body-scroll-lock";
 
 export default {
   components: { Modal },
@@ -115,15 +128,15 @@ export default {
     showModal() {
       this.view.showModal = true;
 
-      // let targetElement = document.querySelector("#modalContent");
-      // disableBodyScroll(targetElement);
+      let targetElement = document.querySelector("#modalContent");
+      disableBodyScroll(targetElement);
     },
     hideModal() {
       this.view.showModal = false;
 
-      // let targetElement = document.querySelector("#modalContent");
-      // enableBodyScroll(targetElement);
-      // clearAllBodyScrollLocks();
+      let targetElement = document.querySelector("#modalContent");
+      enableBodyScroll(targetElement);
+      clearAllBodyScrollLocks();
     },
     getImageSrc(src) {
       return require("@/assets/images/" + src);
@@ -155,7 +168,7 @@ export default {
 
 <style lang="postcss" scoped>
 .slidenav {
-  @apply text-center fixed rounded-full text-2xl top-1/2 -mt-4 mx-12 z-50 bg-blue py-2 px-8 min-w-48;
+  @apply text-center rounded-full text-2xl top-1/2 -mt-4 mx-12 z-50 bg-blue py-2 px-8 min-w-48;
 
   &:hover {
     @apply bg-yellow;

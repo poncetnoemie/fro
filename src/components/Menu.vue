@@ -26,12 +26,15 @@
     </button>
     <transition name="fade">
       <div
-        class="bg-blue w-full h-full z-30 fixed p-20 top-0 left-0"
+        class="bg-blue w-full h-full fixed p-20 top-0 left-0 z-30 flex flex-col justify-center items-center"
         v-if="showMenu"
       >
         <nav
-          class="w-full flex flex-col pt-64 text-center"
-          @click="toggleMenu()"
+          class="w-full flex flex-col text-center"
+          @click="
+            scrollToTop();
+            toggleMenu();
+          "
         >
           <router-link
             class="no-underline text-black text-xl mb-4"
@@ -49,6 +52,12 @@
 
 <script>
 import Icon from "@/components/Icon.vue";
+
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks
+} from "body-scroll-lock";
 
 export default {
   components: { Icon },
@@ -69,10 +78,15 @@ export default {
     toggleMenu() {
       if (this.showMenu === true) {
         this.showMenu = false;
-        this.$emit("body-scroll", true);
+
+        let targetElement = document.querySelector("#modalContent");
+        enableBodyScroll(targetElement);
+        clearAllBodyScrollLocks();
       } else {
         this.showMenu = true;
-        this.$emit("body-scroll", false);
+
+        let targetElement = document.querySelector("#modalContent");
+        disableBodyScroll(targetElement);
       }
     }
   }

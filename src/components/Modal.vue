@@ -7,10 +7,10 @@
       v-if="!isLoading"
     >
       <div
-        class="modal md:m-12 rounded mx-auto relative z-50"
+        class="modal w-full md:m-12 rounded mx-auto relative z-50"
         :class="
           type === 'gallery'
-            ? ''
+            ? 'h-full flex flex-col'
             : 'bg-white max-w-3xl shadow-lg overflow-hidden'
         "
       >
@@ -28,7 +28,7 @@
         </div>
         <div
           class="p-8"
-          :class="type !== 'gallery' ? 'overflow-scroll' : ''"
+          :class="type !== 'gallery' ? 'overflow-scroll' : 'h-full'"
           id="modalContent"
         >
           <slot></slot>
