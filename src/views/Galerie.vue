@@ -167,7 +167,7 @@ export default {
 
 <style lang="postcss" scoped>
 .slidenav {
-  @apply h-full mx-12 z-50 text-white bg-opacity-75 text-10xl outline-none;
+  @apply h-full mx-12 z-50 text-white opacity-75 text-10xl outline-none;
 
   &:hover {
     @apply opacity-100 outline-none;
