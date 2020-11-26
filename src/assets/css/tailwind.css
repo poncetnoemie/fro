@@ -19,7 +19,7 @@
   a {
     @apply font-bold text-blue-dark;
 
-    &:hover {
+    &:not(.nav-link):hover {
       @apply text-yellow;
     }
   }

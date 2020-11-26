@@ -5,9 +5,8 @@
       @click="scrollToTop()"
     >
       <router-link
-        class="text-black hover:text-black text-lg lg:text-xl flex flex-col items-center justify-center group w-24 h-24 lg:w-32 lg:h-32"
+        class="nav-link text-black hover:text-black text-lg lg:text-xl flex flex-col items-center justify-center group w-24 h-24 lg:w-32 lg:h-32"
         :key="index"
-        tag="a"
         :to="route.path"
         v-for="(route, index) in routesList"
         ><Icon
