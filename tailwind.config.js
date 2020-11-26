@@ -37,7 +37,10 @@ module.exports = {
       }),
       minWidth: theme => ({
         ...theme("spacing")
-      })
+      }),
+      fontSize: {
+        "10xl": "10rem"
+      }
     },
     inset: theme => ({
       ...theme("spacing"),

@@ -47,18 +47,20 @@
       v-show="view.showModal"
       @close="hideModal()"
     >
-      <div class="w-full py-12 md:h-screen relative" @click.self="hideModal()">
+      <div
+        class="w-full md:py-12 h-full relative flex items-center"
+        @click.self="hideModal()"
+      >
         <button
-          class="slidenav md:fixed left-0 font-custom"
+          class="slidenav md:fixed left-0 font-custom hidden md:block"
           @click.prevent="prevImage()"
           :disabled="gallery.imageActiveIndex - 1 < 0"
         >
-          Précédent
+          &lsaquo;
         </button>
-        <div class="max-w-5xl h-full m-auto relative">
+        <div class="w-full h-full flex items-center max-w-5xl m-auto relative">
           <div
-            v-for="(image, index) in getGallery(gallery.imageActive.gallery)"
-            :key="index"
+            class="w-full flex items-center md:my-12 md:absolute md:top-0 md:left-0"
           >
             <transition
               name="fade"
@@ -66,27 +68,24 @@
               tag="div"
               class="w-full h-full"
             >
-              <div
-                class="w-full h-full flex items-center my-12 md:absolute md:top-0 md:left-0"
-              >
-                <img
-                  :src="getImageSrc('gallery/' + image.name + '.jpg')"
-                  v-if="image.name === gallery.imageActive.name"
-                  class="w-full max-w-screen h-auto m-auto"
-                />
-              </div>
+              <img
+                :src="
+                  getImageSrc('gallery/' + gallery.imageActive.name + '.jpg')
+                "
+                class="w-full max-w-screen h-auto m-auto"
+              />
             </transition>
           </div>
         </div>
         <button
-          class="slidenav md:fixed right-0 font-custom"
+          class="slidenav md:fixed right-0 font-custom hidden md:block"
           @click.prevent="nextImage()"
           :disabled="
             gallery.imageActiveIndex + 1 ===
               getGallery(gallery.imageActive.gallery).length
           "
         >
-          Suivant
+          &rsaquo;
         </button>
       </div>
     </Modal>
@@ -168,10 +167,10 @@ export default {
 
 <style lang="postcss" scoped>
 .slidenav {
-  @apply text-center rounded-full text-2xl top-1/2 -mt-4 mx-12 z-50 bg-blue py-2 px-8 min-w-48;
+  @apply h-full mx-12 z-50 text-white bg-opacity-75 text-10xl outline-none;
 
   &:hover {
-    @apply bg-yellow;
+    @apply opacity-100 outline-none;
   }
 
   &:focus {
