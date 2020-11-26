@@ -7,9 +7,8 @@
         >
           <router-link
             tag="div"
-            class="logo cursor-pointer h-56 w-56 mb-10"
-            :class="{ 'z-50': bodyScroll === false }"
-            :to="$route.name === 'Coussins' ? '/coussins' : '/'"
+            class="logo cursor-pointer mb-10 h-48 w-48"
+            :to="$route.name === 'Coussins' ? '/coussins-gotfertomi' : '/'"
           >
             <transition-group
               class="relative h-full w-full"
@@ -33,7 +32,7 @@
               />
             </transition-group>
           </router-link>
-          <Menu @body-scroll="switchBodyscroll($event)" />
+          <Menu />
         </div>
       </div>
     </fixed-header>
@@ -49,15 +48,8 @@ export default {
   components: { FixedHeader, Menu },
   data() {
     return {
-      bodyScroll: true,
       infos: infos
     };
-  },
-  methods: {
-    switchBodyscroll(boolean) {
-      this.bodyScroll = boolean;
-      this.$emit("body-scroll", boolean);
-    }
   }
 };
 </script>
@@ -75,6 +67,9 @@ export default {
   }
   .vue-fixed-header--isFixed > .relative {
     @apply flex-row items-center;
+  }
+  .vue-fixed-header--isFixed + .relative {
+    @apply mt-h-header;
   }
   .vue-fixed-header--isFixed .logo {
     @apply h-20 w-20 mr-12 mb-0 flex-shrink-0;

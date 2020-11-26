@@ -1,11 +1,10 @@
 <template>
   <div
     class="grid gap-10 place-items-center p-12 lg:px-20 w-full leading-relaxed"
-    :class="{ 'fixed overflow-hidden': bodyScroll === false }"
     id="app"
   >
-    <Header @body-scroll="bodyScroll = $event" />
-    <main class="w-full max-w-5xl">
+    <Header />
+    <main class="w-full max-w-5xl relative">
       <router-view />
     </main>
     <Footer />
@@ -17,11 +16,6 @@ import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
 
 export default {
-  components: { Footer, Header },
-  data() {
-    return {
-      bodyScroll: true
-    };
-  }
+  components: { Footer, Header }
 };
 </script>
