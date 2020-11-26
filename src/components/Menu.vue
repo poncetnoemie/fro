@@ -5,7 +5,7 @@
       @click="scrollToTop()"
     >
       <router-link
-        class="text-black hover:text-black text-xl flex flex-col items-center justify-center group w-32 h-32"
+        class="text-black hover:text-black text-lg lg:text-xl flex flex-col items-center justify-center group w-24 h-24 lg:w-32 lg:h-32"
         :key="index"
         tag="a"
         :to="route.path"
@@ -18,7 +18,7 @@
       </router-link>
     </nav>
     <button
-      class="fixed top-0 left-0 font-custom hover:bg-yellow rounded-sm py-2 px-8 block md:hidden z-50 focus:outline-none w-full"
+      class="fixed bottom-0 right-0 font-custom hover:bg-yellow rounded-sm py-2 px-8 block md:hidden z-50 focus:outline-none"
       :class="showMenu ? 'bg-white' : 'bg-blue'"
       @click="toggleMenu()"
     >

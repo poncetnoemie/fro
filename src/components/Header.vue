@@ -1,9 +1,9 @@
 <template>
   <transition name="fade" appear mode="out-in">
-    <fixed-header :threshold="400">
+    <fixed-header :threshold="400" class="bg-white">
       <div>
         <div
-          class="bg-white flex flex-col justify-center items-center relative w-full mt-10 md:mt-0"
+          class="bg-white flex flex-col justify-center items-center relative w-full"
         >
           <router-link
             tag="div"
