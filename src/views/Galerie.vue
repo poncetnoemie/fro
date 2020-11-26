@@ -178,7 +178,7 @@ export default {
   }
 
   &:disabled {
-    @apply bg-white text-black-50 cursor-default;
+    @apply opacity-25 cursor-default;
   }
 }
 </style>
