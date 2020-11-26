@@ -23,7 +23,7 @@
         Kelsch fabriqué en Alsace...
       </p>
     </div>
-    <div class="md:col-span-2">
+    <div class="md:col-span-2 bg-gray-200">
       <img
         :src="require('@/assets/images/coussins-gotfertomi-start.jpg')"
         alt="Coussins Gotfertomi®"
@@ -31,7 +31,7 @@
       />
     </div>
     <div
-      class="md:col-span-1"
+      class="md:col-span-1 bg-gray-200"
       :key="'classic-' + index"
       v-for="(item, index) in gallery.classic"
     >
