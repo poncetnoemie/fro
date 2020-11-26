@@ -21,14 +21,14 @@
                 :alt="infos.site.name_gotfertomi"
                 class="w-auto h-full absolute"
                 key="gotfertomi"
-                v-if="$route.name === 'Coussins'"
+                v-show="$route.name === 'Coussins'"
               />
               <img
                 :src="require('@/assets/images/logo_mariefroehlicher.png')"
                 :alt="infos.site.name"
                 class="w-auto h-full absolute"
                 key="classic"
-                v-else
+                v-show="$route.name !== 'Coussins'"
               />
             </transition-group>
           </router-link>
