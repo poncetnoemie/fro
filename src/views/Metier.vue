@@ -37,7 +37,7 @@
       <img
         src="@/assets/images/metier-03.jpg"
         alt=""
-        class="relative transform md:-rotate-3 md:z-20 md:shadow-lg"
+        class="relative transform md:-rotate-3 md:z-10 md:shadow-lg"
       />
       <img
         src="@/assets/images/metier-02.jpg"
