@@ -2,11 +2,14 @@
   <footer class="w-full md:mt-6 pt-16">
     <div class="flex flex-wrap justify-between items-center w-full">
       <div class="w-full md:w-1/4 text-center md:transform md:-rotate-3">
-        <p class="font-custom text-3xl">
+        <p class="font-custom text-3xl mb-0">
           Retrouvez moi sur <br />
           Facebook & Instagram !
         </p>
-        <SocialBox :socials="infos.contact.socials" />
+        <div class="flex items-center justify-center">
+          <img class="h-16 mr-4" src="@/assets/images/arrow.png" alt="" />
+          <SocialBox class="mt-8" :socials="infos.contact.socials" />
+        </div>
       </div>
       <div class="w-full my-16 md:my-0 md:w-1/2 text-center">
         <p>
