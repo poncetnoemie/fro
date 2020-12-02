@@ -4,7 +4,9 @@
     <h2 class="font-bold text-4xl col-span-6">Nouveautés</h2>
     <div
       class="col-span-6 relative"
-      :class="index > 14 ? 'md:col-span-3' : 'md:col-span-2'"
+      :class="
+        index > getGallery('new').length - 3 ? 'md:col-span-3' : 'md:col-span-2'
+      "
       :key="'fauteuil-' + index"
       v-for="(item, index) in getGallery('new')"
     >
