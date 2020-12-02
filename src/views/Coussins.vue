@@ -12,8 +12,10 @@
         <a :href="emailAddresLink">m'envoyer un mail</a> ou de passer à
         l'atelier sur rdv afin de voir le stock.
       </p>
-      <p class="italic">
-        Des personnalisations sont possibles à partir de 10 pièces.
+      <h3 class="text-lg">Tarif</h3>
+      <p>
+        40€ pièce, peu importe le modèle<br />(pour les séries "Mots" &
+        "Bretzel")
       </p>
       <h3 class="text-lg">Tailles</h3>
       <p>Coussins "carrés" : 37/37cm<br />Coussins "rectangles" : 27/42cm.</p>
@@ -23,12 +25,15 @@
         Kelsch fabriqué en Alsace...
       </p>
     </div>
-    <div class="md:col-span-2 bg-gray-200">
+    <div class="md:col-span-2">
       <img
-        :src="require('@/assets/images/coussins-gotfertomi-start.jpg')"
+        :src="require('@/assets/images/coussins-gotfertomi.jpg')"
         alt="Coussins Gotfertomi®"
-        class="w-full"
+        class="w-full mb-4"
       />
+      <p class="italic text-center">
+        Des personnalisations sont possibles à partir de 10 pièces.
+      </p>
     </div>
     <div
       class="md:col-span-1 bg-gray-200"
@@ -41,6 +46,25 @@
         "
         :alt="'Coussins Gotfertomi® - ' + (index + 1)"
         class="w-full"
+      />
+    </div>
+    <div
+      class="md:col-span-1 flex justify-center items-center flex-col md:transform md:-rotate-6 py-12 md:py-0"
+    >
+      <p class="font-custom text-3xl mb-0 text-center">
+        Likez la page et suivez les nouveautés sur <br />
+        Facebook & Instagram !
+      </p>
+      <div class="flex items-center justify-center">
+        <SocialBox class="mt-8" :socials="infos.contact.socials" />
+        <img class="h-16 ml-2" src="@/assets/images/arrow-2.png" alt="" />
+      </div>
+    </div>
+    <div class="md:col-span-2">
+      <img
+        :src="require('@/assets/images/coussins-gotfertomi-bretzel.jpg')"
+        alt="Coussins Gotfertomi®"
+        class="mx-auto mb-4"
       />
     </div>
     <!-- OTHERS -->
@@ -77,12 +101,20 @@
     <div class="md:col-span-1">
       <h2 class="font-bold text-2xl mb-4">
         Sacs de grains de café
-        <small class="block">(merci au Café RECK !)</small>
+        <small class="block text-base"
+          >(merci à café
+          <a href="https://www.reck.fr/" target="_blank" class="text-black"
+            >Reck</a
+          >
+          notre merveilleux torréfacteur local)</small
+        >
       </h2>
+      <h3 class="text-lg">Formats</h3>
       <p>
-        Formats de 37/37cm à 55/55cm. <br />Tarifs et commande par
-        <a :href="emailAddresLink">mail</a>.
+        De 37/37cm à 55/55cm.
       </p>
+      <h3 class="text-lg">Tarifs & commande</h3>
+      <p>Me contacter par <a :href="emailAddresLink">mail</a>.</p>
     </div>
     <div
       :class="index === 0 ? 'md:col-span-2' : 'md:col-span-1'"
@@ -103,9 +135,11 @@
 </template>
 
 <script>
+import SocialBox from "@/components/SocialBox.vue";
 import infos from "@/data/infos.json";
 
 export default {
+  components: { SocialBox },
   computed: {
     emailAddresLink() {
       return (
@@ -119,7 +153,8 @@ export default {
         classic: 6,
         coffee: 4,
         others: 3
-      }
+      },
+      infos: infos
     };
   }
 };

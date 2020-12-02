@@ -5,10 +5,10 @@
         <h1 class="font-bold text-4xl">Tarifs</h1>
         <p>
           Cette grille horaire est donnée à titre indicatif, un devis ferme et
-          définitif ne pourra être fait qu’après avoir vu le siège concerné.
+          définitif ne pourra être établi qu’après avoir vu le siège concerné.
         </p>
         <p>
-          <span class="font-custom text-xl">Tarif horaire :</span> 28 euros<br />
+          <span class="font-custom text-xl">Tarif horaire :</span> 35 euros<br />
           <a href="#cgv">Conditions Générales de Vente</a>
         </p>
       </div>

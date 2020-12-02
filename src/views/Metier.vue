@@ -9,9 +9,9 @@
       </p>
       <p>
         Cet artisan garnit tous les types de carcasses. Il réalise des
-        garnitures qui sont à pelotes, piquées ou capitonnées. Pour ce faire, il
-        peut utiliser des pelotes traditionnelles en crin ou des méthodes
-        modernes à base de mousse synthétique.
+        garnitures à pelotes, piquées ou capitonnées. Pour ce faire, il peut
+        utiliser des pelotes traditionnelles en crin ou des méthodes modernes à
+        base de mousse synthétique.
       </p>
       <p>
         Un bon garnisseur doit respecter le style du siège, car chaque époque a
