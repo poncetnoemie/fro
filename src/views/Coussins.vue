@@ -27,7 +27,7 @@
     </div>
     <div class="md:col-span-2">
       <img
-        :src="require('@/assets/images/coussins-gotfertomi.jpg')"
+        :src="require('@/assets/images/gotfertomi-coussins.jpg')"
         alt="Coussins Gotfertomi®"
         class="w-full mb-4"
       />
@@ -42,7 +42,7 @@
     >
       <img
         :src="
-          require('@/assets/images/coussins-gotfertomi-' + (index + 1) + '.jpg')
+          require('@/assets/images/gotfertomi-coussins-' + (index + 1) + '.jpg')
         "
         :alt="'Coussins Gotfertomi® - ' + (index + 1)"
         class="w-full"
@@ -52,7 +52,8 @@
       class="md:col-span-1 flex justify-center items-center flex-col md:transform md:-rotate-6 py-12 md:py-0"
     >
       <p class="font-custom text-3xl mb-0 text-center">
-        Likez la page et suivez les nouveautés sur <br />
+        Likez la page <strong>Gotfertomi</strong> et suivez les nouveautés sur
+        <br />
         Facebook & Instagram !
       </p>
       <div class="flex items-center justify-center">
@@ -62,7 +63,7 @@
     </div>
     <div class="md:col-span-2">
       <img
-        :src="require('@/assets/images/coussins-gotfertomi-bretzel.jpg')"
+        :src="require('@/assets/images/gotfertomi-coussins-bretzel.jpg')"
         alt="Coussins Gotfertomi®"
         class="mx-auto mb-4"
       />
@@ -82,7 +83,7 @@
         >
           <img
             :src="
-              require('@/assets/images/tabliers-gotfertomi-' +
+              require('@/assets/images/gotfertomi-divers-' +
                 (index + 1) +
                 '.jpg')
             "
@@ -123,7 +124,7 @@
     >
       <img
         :src="
-          require('@/assets/images/coussins-gotfertomi-cafe-' +
+          require('@/assets/images/gotfertomi-coussins-cafe-' +
             (index + 1) +
             '.jpg')
         "
@@ -152,7 +153,7 @@ export default {
       gallery: {
         classic: 6,
         coffee: 4,
-        others: 3
+        others: 6
       },
       infos: infos
     };
