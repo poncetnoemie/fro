@@ -1,6 +1,6 @@
 module.exports = {
   // github pages url
-  publicPath: process.env.NODE_ENV === "production" ? "/fro/" : "/"
+  // publicPath: process.env.NODE_ENV === "production" ? "/fro/" : "/"
   // custom domain :
-  // publicPath: process.env.NODE_ENV === "production" ? "./" : "/"
+  publicPath: process.env.NODE_ENV === "production" ? "./" : "/"
 };
