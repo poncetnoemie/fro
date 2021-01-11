@@ -8,7 +8,7 @@
           définitif ne pourra être établi qu’après avoir vu le siège concerné.
         </p>
         <p>
-          <span class="font-custom text-xl">Tarif horaire :</span> 35 euros<br />
+          <span class="font-custom text-xl">Tarif horaire :</span> 40 euros<br />
           <a href="#cgv">Conditions Générales de Vente</a>
         </p>
       </div>
