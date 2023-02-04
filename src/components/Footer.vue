@@ -18,9 +18,14 @@
           téléphone au <a :href="phoneNumberLink">{{ infos.contact.phone }}</a
           >.
         </p>
-        <p class="mb-0">
+        <p>
           Atelier à Neudorf (Strasbourg)
           <span class="font-bold">uniquement sur rendez-vous.</span>
+        </p>
+        <p class="mb-0 text-lg">
+          <a href="https://gotfertomi.alsace"
+            >Découvrez ma boutique de coussin alsacien</a
+          >
         </p>
       </div>
       <div class="w-full md:w-1/4 text-center md:transform md:rotate-6">
@@ -59,13 +64,13 @@ export default {
     },
     phoneNumberLink() {
       return "tel:" + infos.contact.phone.replace(/ /g, "");
-    }
+    },
   },
   data() {
     return {
       infos: infos,
-      year: new Date().getFullYear()
+      year: new Date().getFullYear(),
     };
-  }
+  },
 };
 </script>

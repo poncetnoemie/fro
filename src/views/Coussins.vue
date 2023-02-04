@@ -8,13 +8,15 @@
         collection de coussins qui évolue constamment !
       </p>
       <p>
-        Si vous souhaitez en commander, il suffit de
-        <a :href="emailAddresLink">m'envoyer un mail</a> ou de passer à
-        l'atelier sur rdv afin de voir le stock.
+        Si vous souhaitez en commander, visitez la page de
+        <a href="https://gotfertomi.alsace"
+          >ma boutique de coussin de décoration</a
+        >
+        ou de passer à l'atelier sur rdv afin de voir le stock.
       </p>
       <h3 class="text-lg">Tarif</h3>
       <p>
-        40€ pièce, peu importe le modèle<br />(pour les séries "Mots" &
+        55€ pièce, peu importe le modèle<br />(pour les séries "Mots" &
         "Bretzel")
       </p>
       <h3 class="text-lg">Tailles</h3>
@@ -146,17 +148,17 @@ export default {
       return (
         "mailto:" + infos.contact.email + "?subject=A propos de Gotfertomi®"
       );
-    }
+    },
   },
   data() {
     return {
       gallery: {
         classic: 6,
         coffee: 4,
-        others: 6
+        others: 6,
       },
-      infos: infos
+      infos: infos,
     };
-  }
+  },
 };
 </script>
